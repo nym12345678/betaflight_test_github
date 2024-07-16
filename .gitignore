@@ -1,52 +1,61 @@
-# Prerequisites
-*.d
-
-# Object files
 *.o
-*.ko
-*.obj
-*.elf
+.DS_Store
+*~
+*.uvopt
+*.dep
+*.bak
+*.uvgui.*
+*.swp
+*.save
+.project
+.settings
+.cproject
+obj/
+patches/
+startup_stm32f10x_md_gcc.s
+.idea
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# script-generated files
+docs/Manual.pdf
+README.pdf
 
-# Precompiled Headers
-*.gch
-*.pch
+# artefacts of top-level Makefile
+/downloads/
+/tools/
+/build/
+# local changes only
+mk/local.mk
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# artefacts for VisualGDB (running in Visual Studio)
+mcu.mak
+mcu.mak.old
+stm32.mak
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# eclipse launch configurations
+/support/eclipse
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# ozone launch configurations
+/support/ozone
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# local scripts
+/support/scripts
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# artefacts for VS Code
+/.vscode/
+
+# artefacts for Visual Studio 
+/.vs
+
+# artefacts for CLion
+/cmake-build-debug/
+/CMakeLists.txt
+
+.vagrant
+ubuntu*.log
+
+# EEPROM image file (created by SITL)
+eeprom.bin
+
+# config used for building targets
+/src/config
+
