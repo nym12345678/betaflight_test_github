@@ -84,3 +84,20 @@
 
 // ITCM is in short supply so excluding fast code where preferred, not required.
 #define FAST_CODE_PREF
+
+// *************** Baro **************************
+#define USE_I2C
+#define USE_I2C_DEVICE_1
+#define I2C_DEVICE              (I2CDEV_1)
+#define I2C1_SCL_PIN               PB8        // SCL pad
+#define I2C1_SDA_PIN               PB9        // SDA pad
+#define USE_I2C_PULLUP
+
+#define BARO_I2C_INSTANCE       (I2CDEV_1)
+#define MAG_I2C_INSTANCE        (I2CDEV_1)
+#define USE_BARO
+// #define USE_BARO_BMP280
+// #define USE_BARO_DPS310
+// #define DEFAULT_BARO_BMP280
+// #define DEFAULT_BARO_DPS310
+
